@@ -1,0 +1,120 @@
+body {
+  background-color: #3A5AB1;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif';
+}
+.main {
+  width: 1000px;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 100px;
+  color: #fff;
+  border: 3px solid red; /*Remove it after designing */
+}
+
+.main .l-side {
+  width: 50%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  background: #e53939;
+  position: relative;
+}
+
+.main .l-side h1 {
+  margin-top: 100px;
+}
+.l-side form input{
+  text-align: center;
+  width: 70%;
+  height: 35px;
+  margin-top: 10px;
+  border: none;
+  background: #f8f8f8;
+  border-radius: 20px;
+}
+
+.l-side form input:focus{
+  outline: none;
+}
+
+.l-side form input[type='submit']{
+  background: hsl(41, 100%, 61%);
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+.l-side form input[type='submit']:hover {
+  background: hsl(41, 100%, 55%);
+}
+
+.l-side p.forget{
+  color: blue;
+  margin-top: 16px;
+}
+.l-side p.forget:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #fff;
+}
+p.or {
+  font-size: 15px;
+  width: 40px;
+  height: 30px;
+  padding-top: 10px;
+  background: #e53939;
+  border-radius: 50%;
+  position: absolute;
+  left: 96%;
+  text-transform: uppercase;
+  color: #f8f8f8;
+  font-weight: bold;
+}
+
+.r-side {
+  text-align: center;
+}
+
+.main .r-side h1{
+  margin-top: 100px;
+}
+.r-side #social {
+  margin-top: 40px;
+}
+#social button {
+  border: none;
+  padding: 15px;
+  width: 50px;
+  font-size: 18px;
+  background: #fff;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+#social .twitter {
+  color: #55acee;
+  cursor: pointer;
+}
+#social .twitter:hover {
+  background: #55acee;
+  color: #fff;
+}
+
+#social .facebook{
+  color: #012677;
+  cursor: pointer;
+
+}
+#social .facebook:hover{
+  background-color: #012677;
+  color: #fff;
+
+}
+#social .google{
+  color: #df0f25;
+  cursor: pointer;
+
+}
+#social .google:hover{
+ background: #df0f25;
+ color: #fff;
+
+}
