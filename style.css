@@ -1,14 +1,19 @@
 body {
   background-color: #3A5AB1;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif';
+
 }
+
 .main {
-  width: 1000px;
+  width: 100%;
+  max-width: 920px;
   height: 500px;
   margin: 0 auto;
   margin-top: 100px;
+  margin-bottom: 16px;
   color: #fff;
-  border: 3px solid red; /*Remove it after designing */
+  border: 3px solid red;
+  /*Remove it after designing */
 }
 
 .main .l-side {
@@ -23,7 +28,8 @@ body {
 .main .l-side h1 {
   margin-top: 100px;
 }
-.l-side form input{
+
+.l-side form input {
   text-align: center;
   width: 70%;
   height: 35px;
@@ -33,29 +39,33 @@ body {
   border-radius: 20px;
 }
 
-.l-side form input:focus{
+.l-side form input:focus {
   outline: none;
 }
 
-.l-side form input[type='submit']{
+.l-side form input[type='submit'] {
   background: hsl(41, 100%, 61%);
   color: #fff;
   cursor: pointer;
   font-weight: bold;
 }
-.l-side form input[type='submit']:hover {
+
+.l-side form input[type='submit']:hover,
+.sign-in:hover {
   background: hsl(41, 100%, 55%);
 }
 
-.l-side p.forget{
+.l-side p.forget {
   color: blue;
   margin-top: 16px;
 }
+
 .l-side p.forget:hover {
   text-decoration: underline;
   cursor: pointer;
   color: #fff;
 }
+
 p.or {
   font-size: 15px;
   width: 40px;
@@ -74,12 +84,14 @@ p.or {
   text-align: center;
 }
 
-.main .r-side h1{
+.main .r-side h1 {
   margin-top: 100px;
 }
+
 .r-side #social {
   margin-top: 40px;
 }
+
 #social button {
   border: none;
   padding: 15px;
@@ -89,32 +101,86 @@ p.or {
   margin-right: 10px;
   border-radius: 50%;
 }
+
 #social .twitter {
   color: #55acee;
   cursor: pointer;
 }
+
 #social .twitter:hover {
   background: #55acee;
   color: #fff;
 }
 
-#social .facebook{
+#social .facebook {
   color: #012677;
   cursor: pointer;
 
 }
-#social .facebook:hover{
+
+#social .facebook:hover {
   background-color: #012677;
   color: #fff;
 
 }
-#social .google{
+
+#social .google {
   color: #df0f25;
   cursor: pointer;
 
 }
-#social .google:hover{
- background: #df0f25;
- color: #fff;
+
+#social .google:hover {
+  background: #df0f25;
+  color: #fff;
+
+}
+
+.sign-in {
+  display: none;
+}
+
+@media (max-width: 710px) {
+
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    /* Vertical center */
+    /* height: 100vh;              Full viewport height */
+  }
+
+  .main .l-side {
+    width: 92%;
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  .main .r-side {
+    display: none;
+  }
+
+  .l-side p.or {
+    display: none;
+  }
+
+  .sign-in {
+    display: block;
+    width: 70%;
+    height: 35px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border: none;
+    background: hsl(41, 100%, 61%);
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 20px;
+
+  }
 
 }
